@@ -1,3 +1,17 @@
+# do silly.do
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 22:25:48 on Feb 05,2023
+# vlog silly.sv silly_tb.sv 
+# -- Compiling module silly
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 22:25:48 on Feb 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb 
+# Start time: 22:25:48 on Feb 05,2023
+# ** Note: (vsim-3812) Design is being optimized...
 # //  ModelSim SE-64 2021.3 Jul 13 2021
 # //
 # //  Copyright 1991-2021 Mentor Graphics Corporation
@@ -11,17 +25,12 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# do silly.do
-# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 13:34:35 on Feb 03,2023
-# vlog -reportprogress 300 silly.sv silly_tb.sv 
-# -- Compiling module silly
-# ** Error: silly.sv(20): (vlog-13120) Unterminated block comment.
-# silly.sv(24): Verilog Compiler exiting
-# End time: 13:34:35 on Feb 03,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/modeltech64_2021.3/win64/vlog failed.
-# Error in macro ./silly.do line 30
-# C:/modeltech64_2021.3/win64/vlog failed.
+# Loading sv_std.std
+# Loading work.tb(fast)
+# Loading work.silly(fast)
+# .list
+# ** UI-Msg: (vish-4014) No objects found matching '/tb/dut/y'.
+# Error in macro ./silly.do line 52
+# ** UI-Msg: (vish-4014) No objects found matching '/tb/dut/y'.
 #     while executing
-# "vlog silly.sv silly_tb.sv"
+# "add wave -color white /tb/dut/y"
